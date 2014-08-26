@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tealeaf Academy - Postit</title>
+    <title>Postit</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -13,13 +13,12 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <div class="navbar-inner">
-          <div class="container">
+  <div class="navbar navbar-fixed-top navbar">
+    <div class="navbar-inner">
             <%= render 'layouts/navigation' %>
-          </div>
         </div>
       </div>
+    <%= link_to image_tag("/assets/postitlogo.png"), root_path, :id => 'logo' %>
     </header>
     <div id="main" role="main">
       <div class="container">

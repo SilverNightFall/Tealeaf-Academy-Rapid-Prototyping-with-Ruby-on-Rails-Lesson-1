@@ -10,35 +10,57 @@
  *
  *= require_self
  *= require_tree .
- */
+ *= require bootstrap
+*/
 
- @import "bootstrap";
-
- .container {
-  margin-left: 135px
+.nav>li>a {
+  background-color: #F1D96F;
+  color: #ffffff;
+    font-size: 30px;
 }
 
-.navbar .nav > li > a.brand {
-  padding-left: 0px;
+ul.nav>li>a:hover, ul.nav>li>a:focus {
+  background-color: #B8D98A;
+  color: #ffffff;
+  font-size: 30px;
 }
 
-.quiet {
-  color: #ababab;
+.nav {
+  background : #B5729E;
+  width: 100%;
 }
 
-div.nav_item {
-  margin-left: 25px;
+.nav>li {
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 2px;
+  width: 200px;
+  outline-style: ridge;
+  outline-color: #65BFD7;
+  text-align: center;
+  margin-right: 20px;
   float: left;
 }
 
-.label  {
-  a, a:hover, a:focus {
-    color: #fff;
-    text-decoration: none;
-  }
+#logo {
+  position: relative;
+  z-index: 9999;
+  width: 265px;
+  height: 259px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-div.comment_votes {
-  padding: 10px;
+ul.nav {
+  padding-left: 280px;
 }
 
+header {
+  height: 50px;
+}
+
+div#main {
+position: relative;
+  z-index: 9999;
+}

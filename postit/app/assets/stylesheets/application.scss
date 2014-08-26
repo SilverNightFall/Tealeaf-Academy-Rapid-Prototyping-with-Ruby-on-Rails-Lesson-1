@@ -42,7 +42,7 @@ ul.nav>li>a:hover, ul.nav>li>a:focus {
   float: left;
 }
 
-#logo {
+a#logo {
   position: relative;
   z-index: 9999;
   width: 265px;
@@ -58,9 +58,4 @@ ul.nav {
 
 header {
   height: 50px;
-}
-
-div#main {
-position: relative;
-  z-index: 9999;
 }

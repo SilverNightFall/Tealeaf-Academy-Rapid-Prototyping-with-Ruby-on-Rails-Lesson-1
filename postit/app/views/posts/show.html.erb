@@ -1,5 +1,19 @@
-<h1><%= @post.title %></h1>
-
- <p><%= @post.description %></p>
-
-  <%= link_to image_tag("/assets/arrow.png"), posts_path, :id => 'arrow' %>
+<%= render 'shared/content_title', title: @post.title %>
+  <div class="row">
+    <div class="span8 well">
+    <%= render @post.categories %>
+    <p><%= @post.description %></p>
+    <span class="post_name">Posted by: <%= @post.user.username %></span>
+    <br />
+    <span class="small">Created on: <%= @post.created_at.strftime("%m/%d/%Y")  %></span><br />
+      <% @post.comments.each do |comment|  %>
+      <div class="comment_body well">
+      <p><%= comment.body %></p>
+      <span class="post_name">Posted by: <%= comment.user.username %></span>
+    <br />
+    <span class="small">Created on: <%= @post.created_at.strftime("%m/%d/%Y")  %></span><br />
+      <% end %>
+    </div>
+    </div>
+  </div>
+</ul>
